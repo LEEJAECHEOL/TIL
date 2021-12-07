@@ -11,6 +11,7 @@
 - 프리티어는 RAM이 1GB이므로 2GB 정도로 생각하자
 - https://aws.amazon.com/ko/premiumsupport/knowledge-center/ec2-memory-swap-file/
 - 설정 전
+
   ![ec2-memory-swap-2](../assets/ec2-memory-swap-2.png)
 
 1. swap 메모리 할당
