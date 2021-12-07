@@ -2,5 +2,5 @@
 
 ## AWS
 
-- [EC2](https://github.com/LEEJAECHEOL/TIL/aws/EC2.md)
-- [EC2-memory-swap](https://github.com/LEEJAECHEOL/TIL/aws/EC2-memory-swap.md)
+- [EC2](https://github.com/LEEJAECHEOL/TIL/blob/master/aws/EC2.md)
+- [EC2-memory-swap](https://github.com/LEEJAECHEOL/TIL/blob/master/aws/EC2-memory-swap.md)
