@@ -81,9 +81,23 @@ chmod +x deploy.sh
 ```
 
 - 흐름
+
   1. 현재 nginx가 가리키는 스프링의 profile을 확인 후, 가리키지 않는 포트를 IDLE_PORT로 지정한다
   2. pgrep -f active=$IDLE_PROFILE 명령어를 통해 구동 중인 어플리케이션이 있다면 PID를 가져온다
   3. 구동 중인 어플리케이션을 중지한다
   4. 새로운 어플리케이션을 가동한다.
   5. 10초 후 어플리케이션의 health 체크를 수행한다.
   6. 10번을 실패하면 exit 1로 빠져나가며, 성공 반복문을 빠져나가고 switch.sh를 실행한다.
+
+- Error
+  - Jenkins 사용 도중 Build Shell 입력작업중, if 구문에서 에러가 계속 발생하는 경우
+  - sh -> dash 로 링크가 걸려있어서 발생한 문제
+  - root 계정으로 들어가서 /bin/sh 링크를 /bin/bash 로 재설정
+    > ### 현재 상태 확인 방법
+    >
+    > - ls -ahl /bin/sh
+    >
+    > ### 링크 해제 후, 재설정
+    >
+    > - unlink /bin/sh
+    > - ln -s /bin/bash /bin/sh
