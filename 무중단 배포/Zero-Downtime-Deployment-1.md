@@ -26,7 +26,7 @@ service status nginx or systemctl status nginx
    proxy_pass $service_url;
    ```
 
-   ![ec2-memory-swap-2](../assets/Zero-Downtime-Deployment-1.png)
+   ![Zero-Downtime-Deployment-1](../assets/Zero-Downtime-Deployment-1.png)
 
    - NGINX 재시작
 

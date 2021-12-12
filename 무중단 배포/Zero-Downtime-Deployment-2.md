@@ -74,6 +74,12 @@ do
 done
 ```
 
+- 실행 권한 주기
+
+```
+chmod +x deploy.sh
+```
+
 - 흐름
   1. 현재 nginx가 가리키는 스프링의 profile을 확인 후, 가리키지 않는 포트를 IDLE_PORT로 지정한다
   2. pgrep -f active=$IDLE_PROFILE 명령어를 통해 구동 중인 어플리케이션이 있다면 PID를 가져온다

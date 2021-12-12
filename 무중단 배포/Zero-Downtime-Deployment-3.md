@@ -29,6 +29,12 @@ echo ">>> NGINX RELOAD"
 sudo service nginx reload
 ```
 
+- 실행 권한 주기
+
+```
+chmod +x switch.sh
+```
+
 - 흐름
   1. nginx가 구동 중인 프로필을 확인 후, 새롭게 가리킬 포트를 IDLE_PORT에 설정
   2. /etc/nginx/conf.d/service-url.inc 파일에 포트 부분을 IDLE_PORT로 변경
