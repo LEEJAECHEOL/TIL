@@ -72,6 +72,7 @@ do
         echo ">>> Fail Healt Check!! Retry..."
         sleep 10
 done
+# switch.sh 추가해줘야함.
 ```
 
 - 실행 권한 주기
