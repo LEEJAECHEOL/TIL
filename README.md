@@ -17,6 +17,7 @@
 - [Jenkins 설정](https://github.com/LEEJAECHEOL/TIL/blob/master/%EB%AC%B4%EC%A4%91%EB%8B%A8%20%EB%B0%B0%ED%8F%AC/Zero-Downtime-Deployment-4.md)
 - [DB 백업](https://github.com/LEEJAECHEOL/TIL/blob/master/%EB%AC%B4%EC%A4%91%EB%8B%A8%20%EB%B0%B0%ED%8F%AC/Zero-Downtime-Deployment-5.md)
 - [로그 백업](https://github.com/LEEJAECHEOL/TIL/blob/master/%EB%AC%B4%EC%A4%91%EB%8B%A8%20%EB%B0%B0%ED%8F%AC/Zero-Downtime-Deployment-6.md)
+- [Github Private Repository 연동](https://github.com/LEEJAECHEOL/TIL/blob/master/%EB%AC%B4%EC%A4%91%EB%8B%A8%20%EB%B0%B0%ED%8F%AC/Zero-Downtime-Deployment-7.md)
 
 ## Network
 
