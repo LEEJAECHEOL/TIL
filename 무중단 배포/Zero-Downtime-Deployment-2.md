@@ -3,7 +3,7 @@
 - /app/deploy.sh
 
 ```sh
-BASE_PATH=/home/ubuntu/app/nonstop
+BASE_PATH=/home/ubuntu/nonstop/app
 BUILD_PATH=$(ls $BASE_PATH/*-SNAPSHOT.jar)
 JAR_NAME=$(basename $BUILD_PATH)
 echo ">>> Check Profile that is current running Application"
@@ -41,7 +41,7 @@ fi
 
 
 echo ">>> Deploy $IDLE_PROFILE"
-sudo nohup java -jar -Dspring.profiles.active=$IDLE_PROFILE $BASE_PATH/$JAR_NAME &
+sudo nohup java -jar -Dspring.profiles.active=$IDLE_PROFILE $BASE_PATH/$JAR_NAME > $BASE_PATH/log.out &
 echo ">>> Start application($IDLE_PROFILE) health check in 10 seconds"
 echo ">>> curl -s http://localhost:$IDLE_PORT/actuator/health"
 sleep 10
@@ -72,7 +72,8 @@ do
         echo ">>> Fail Healt Check!! Retry..."
         sleep 10
 done
-# switch.sh 추가해줘야함.
+
+/home/ubuntu/nonstop/script/switch.sh
 ```
 
 - 실행 권한 주기
